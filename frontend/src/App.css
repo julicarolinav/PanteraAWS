@@ -325,7 +325,21 @@ body {
 .scroll-container::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(90deg, rgba(20, 184, 166, 0.7), rgba(20, 184, 166, 1));
 }
+/* Estilo para los íconos de calendario y reloj 🕒 */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator { /* <-- Se añade este selector */
+  filter: invert(1) brightness(0.9) sepia(1) saturate(5) hue-rotate(250deg);
+  cursor: pointer;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
 
+/* Efecto hover para ambos íconos */
+input[type="date"]::-webkit-calendar-picker-indicator:hover,
+input[type="time"]::-webkit-calendar-picker-indicator:hover { /* <-- Y aquí también */
+  opacity: 1;
+  transform: scale(1.1);
+}
 /* Mobile optimizations for skills */
 @media (max-width: 768px) {
   .skill-card:hover {

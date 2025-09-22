@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@mui/material": "^7.3.2",
+    "@mui/x-date-pickers": "^8.11.3",
     "@tailwindcss/vite": "^4.1.13",
+    "dayjs": "^1.11.18",
     "leaflet": "^1.9.4",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
